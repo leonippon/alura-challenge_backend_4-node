@@ -1,0 +1,99 @@
+POST http://localhost:3000/signUp
+content-type: application/json
+
+{
+    "username": "teste",
+    "password": "123"
+}
+###
+GET http://localhost:3000/signIn
+content-type: application/json
+
+{
+    "username": "teste",
+    "password": "123"
+}
+###
+GET http://localhost:3000/signOut
+content-type: application/json
+
+{
+    "username": "teste"
+}
+###
+PUT http://localhost:3000/updateUser
+content-type: application/json
+
+{
+    "username": "teste",
+    "old_password": "123",
+    "new_password": "1234"
+}
+###
+DELETE http://localhost:3000/deleteUser
+content-type: application/json
+
+{
+    "username": "teste",
+    "password": "1234"
+}
+###
+POST http://localhost:3000/incomes
+content-type: application/json
+
+{
+    "description": "Grana recebida do cliente 1",
+    "value": 1000,
+    "date": "2022-10-01"
+}
+###
+POST http://localhost:3000/incomes
+content-type: application/json
+
+{
+    "description": "Grana recebida do cliente 2",
+    "value": 1000,
+    "date": "2022-10-01"
+}
+###
+POST http://localhost:3000/incomes
+content-type: application/json
+
+{
+    "description": "Grana recebida do cliente 2",
+    "value": 2000,
+    "date": "2022-11-01"
+}
+###
+POST http://localhost:3000/expenses
+content-type: application/json
+
+{
+    "description": "Grana paga ao fornecedor 1",
+    "value": 3000,
+    "date": "2022-08-01"
+}
+###
+POST http://localhost:3000/expenses
+content-type: application/json
+
+{
+    "description": "Grana paga ao fornecedor 2",
+    "value": 500,
+    "date": "2022-08-07"
+}
+###
+POST http://localhost:3000/expenses
+content-type: application/json
+
+{
+    "description": "Grana paga ao fonrecedor 1",
+    "value": 1000,
+    "date": "2022-01-01"
+}
+###
+GET http://localhost:3000/incomes
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjlhOGQ3YjkzLWQ2ZTUtNDRhMy04ZmU2LTRhZmQyYmNhY2NiZSIsImlhdCI6MTY2NTI1NTgyNSwiZXhwIjoxNjY1MzM3NjM1fQ.rF-biJTxiSf1-M1hdSVnpVoRTZncAO211YWvSr3ylm4"
+}
