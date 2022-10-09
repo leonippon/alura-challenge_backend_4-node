@@ -10,14 +10,13 @@
 > - Serviço de autenticação/autorização para restringir acesso às informações.
 
 ### Tecnologias Usadas
-- LANG: **Javascript** <div><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></div>
-- RT: **Node.JS**
-- FW: **Express.JS**
-- DB: **Sqlite**
-- ORM: **Sequelize**
-- AUTH: **Bcrypt, Jsonwebtoken**
-- TEST: **JEST, supertest**
-- OTHER: **dotenv, nodemon, sequelize-cli**
+> - **LANG:** ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+> - **RT:** ![Node.JS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+> - **FW:** ![Express.JS](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+> - **DB:** ![SQLITE](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+> - **ORM:** ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+> - **AUTH:** ![BCRYPT](https://img.shields.io/badge/bcrypt-543DE0?style=for-the-badge&logo=bcrypt&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white) 
+> - **TEST:** ![JEST](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
 
 ### ENDPOINTs:
 > - Incomes (Receitas)
