@@ -98,7 +98,7 @@ Despesas por categoria, Outros: 3000
 ```
 > - (/summary/:year/:month) Retorna o resumo acima com os valores somados referentes ao mês {month} do ano {year}.
 
-### Regras de Negócio - Summary (Resumo)
+### Regras de Negócio - Users (Usuários)
 Exemplo de Usuário:
 ```
 {
