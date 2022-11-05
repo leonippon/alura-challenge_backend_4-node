@@ -37,12 +37,12 @@
 
 ### Regras de Negócio - Incomes (Receitas)
 Exemplo de Receita:
-```
+```json
 {
-  id: (UUID)
-  description: "Compra na loja X" (STRING)
-  value: 1000,00 (DECIMAL)
-  date: "2022-01-01" (DATEONLY)
+  "id": "(UUID)"
+  "description": "Compra na loja X (STRING)"
+  "value": "1000,00 (DECIMAL)"
+  "date": "2022-01-01 (DATEONLY)"
 }
 ```
 > - Todas as informações da receita são obrigatórias.
@@ -63,13 +63,13 @@ Exemplo de Receita:
 
 ### Regras de Negócio - Expenses (Despesas)
 Exemplo de Despesa:
-```
+```json
 {
-  id: (UUID)
-  description: "Compra na loja X" (STRING)
-  category: "Outros" (STRING)
-  value: 1000 (DECIMAL)
-  date: "2022-01-01" (DATEONLY)
+  "id": "(UUID)",
+  "description": "Compra na loja X (STRING)",
+  "category": "Outros (STRING)",
+  "value": "1000 (DECIMAL)",
+  "date": "2022-01-01 (DATEONLY)"
 }
 ```
 > - Todas as regras das Despesas são válidas aqui.
@@ -79,31 +79,31 @@ Exemplo de Despesa:
 >   - Alimentação, Saúde, Moradia, Transporte, Educação, Lazer, Imprevistos, Outras.
 ### Regras de Negócio - Summary (Resumo)
 Exemplo de Resumo:
-```
+```json
 {
-Resumo do mês: 2022-01-01 (DATEONLY)
-Resumo das receitas do período: 10000 (DECIMAL)
-Resumo das despesas do período: 9000 (DECIMAL)
-Saldo do período: 1000 (DECIMAL)
-Despesas por categoria, Alimentação": 1000,
-Despesas por categoria, Saúde: 1000,
-Despesas por categoria, Moradia: 1000,
-Despesas por categoria, Transporte: 1000,
-Despesas por categoria, Educação: 1000,
-Despesas por categoria, Lazer: 1000,
-Despesas por categoria, Imprevistos: 1000,
-Despesas por categoria, Outros: 3000
+"Resumo do mês": "2022-01-01 (DATEONLY)",
+"Resumo das receitas do período": "10000 (DECIMAL)",
+"Resumo das despesas do período": "9000 (DECIMAL)",
+"Saldo do período": "1000 (DECIMAL)",
+"Despesas por categoria, Alimentação": "1000",
+"Despesas por categoria, Saúde": "1000",
+"Despesas por categoria, Moradia": "1000",
+"Despesas por categoria, Transporte": "1000",
+"Despesas por categoria, Educação": "1000",
+"Despesas por categoria, Lazer": "1000",
+"Despesas por categoria, Imprevistos": "1000",
+"Despesas por categoria, Outros": "3000"
 }
 ```
 > - (/summary/:year/:month) Retorna o resumo acima com os valores somados referentes ao mês {month} do ano {year}.
 
 ### Regras de Negócio - Users (Usuários)
 Exemplo de Usuário:
-```
+```json
 {
-  id: (UUID)
-  username: leonardo
-  password: hash
+  "id": "(UUID)",
+  "username": "leonardo",
+  "password": "hash"
 }
 ```
 > - Cadastro (POST):
@@ -116,10 +116,10 @@ Exemplo de Usuário:
 >   - (/deleteUser) Exclui o usuário {username}.
 
 ### Testes Automatizados
-```
-// Rodas os testes na ordem:
+```shell
+# Rodas os testes na ordem:
 jest --runInBand incomes.spec.js, expenses.spec.js, summary-users.spec.js
-// OU
+# OU
 npm run test incomes.spec.js, expenses.spec.js, summary-users.spec.js
 ```
 > - Há um teste programado para cada função e regra de negócio criada.
